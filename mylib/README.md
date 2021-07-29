@@ -74,7 +74,9 @@ git clone https://github.com/PaddlePaddle/PaddleOCR
 
 
 python3 -m pip install paddlepaddle==2.0.0 -i https://mirror.baidu.com/pypi/simple
+
 cd PaddleOCR
+
 pip3 install -r requirements.txt
 
 
@@ -110,6 +112,7 @@ python3 tools/export_model.py -c configs/cls/cls_mv3.yml -o Global.pretrained_mo
 cd PaddleOCR/deploy/cpp_infer
 
 sh tools/build.sh
+
 修改build.sh为：
 
 OPENCV_DIR=/data1/OCR/opencv-3.4.7/opencv3
